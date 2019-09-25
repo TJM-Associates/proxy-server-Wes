@@ -9,6 +9,8 @@ const port = 3000;
 
 app.use(cors());
 app.use(morgan('dev'));
+
+app.use("/", express.static('loader'))
 app.use('/restaurants/:id', express.static('./public/lib'));
 
 app.get('/api/restaurants/:id/reviews', function (req, res) {
