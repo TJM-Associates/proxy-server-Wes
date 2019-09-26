@@ -2,7 +2,6 @@ require('newrelic');
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const helpers = require('./helpers.js')
 
 const app = express();
 const port = 3000;
@@ -19,7 +18,7 @@ app.get('/api/restaurants/:id/reviews', function (req, res) {
 });
 
 app.get('/api/restaurants/:id/images', function (req, res) {
-    res.redirect(`http://54.193.42.82:3002/api/restaurants/${req.params.id}/images`)
+    res.redirect(`http://13.52.76.158/api/restaurants/${req.params.id}/images`)
 });
 
 app.get('/api/restaurants/:id/availability', function (req, res) {
