@@ -14,7 +14,7 @@ app.use('/restaurants/:id', express.static('./public/lib'));
 // app.use('/restaurants/:restaurantId', express.static('./public/lib'))
 
 app.get('/api/restaurants/:id/reviews', function (req, res) {
-    res.redirect(`http://52.8.6.53:3001/api/restaurants/${req.params.id}/reviews`)
+    res.redirect(`http://54.67.96.77/api/restaurants/${req.params.id}/reviews`);
 });
 
 // app.get('/api/restaurants/:id/images', function (req, res) {
